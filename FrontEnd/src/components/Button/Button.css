@@ -1,0 +1,12 @@
+.colorAnimate {
+  animation: bgcolor 3s ease-in 3s infinite alternate;
+}
+
+@keyframes bgcolor {
+  from {
+    background-color: #ff7e00;
+  }
+  to {
+    background-color: black;
+  }
+}

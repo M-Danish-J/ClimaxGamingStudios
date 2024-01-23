@@ -5,7 +5,7 @@ import mlabs from '../../images/m-labs-logo.svg'
 
 export default function MLABS() {
     return (
-        <div className='mx-[5vw] xl:mx-[13vw] mt-20 relative'>
+        <div className=' my-24 relative'>
             <Heading heading="M" span="LABS" description="M-LABS has a purpose built space to house and groom the best game dev talent in Pakistan via Incubation, Game Jams, Interships and a nationwide fellowship program." width={true} />
             <Button text="Explore" />
             <div className="absolute md:right-0 lg:right-10 xl:right-28 -bottom-40 md:-bottom-6 xl:-bottom-20">

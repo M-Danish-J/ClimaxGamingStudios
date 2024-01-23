@@ -1,4 +1,6 @@
 import React from 'react'
+import { AiFillApple } from "react-icons/ai";
+import { AiFillAndroid } from "react-icons/ai";
 
 export default function GameCard({ text, desc, img, apple, android }) {
     return (
@@ -13,8 +15,18 @@ export default function GameCard({ text, desc, img, apple, android }) {
                         <p className='text-[10px] md:text-xs'>{desc}</p>
                     </div>
                     <div className="flex gap-1">
-                        {apple && <img src={apple} className='w-16 lg:w-20 xl:w-28' />}
-                        {android && <img src={android} className='w-16 lg:w-20 xl:w-28' />}
+                        {apple && <div className="flex cursor-pointer bg-black text-white px-1 xl:px-2 py-1 rounded-md hover:bg-white hover:text-black gap-1">
+                            <div className="text-xl xl:text-2xl">
+                                <AiFillApple />
+                            </div>
+                            <p className='text-[10px] xl:text-xs tracking-tighter leading-tight'>Available on <br /> Apple store</p>
+                        </div>}
+                        {android && <div className="flex cursor-pointer bg-black text-white px-1 xl:px-2 py-1 rounded-md hover:bg-white hover:text-black gap-1">
+                            <div className="text-xl xl:text-2xl">
+                                <AiFillAndroid />
+                            </div>
+                            <p className='text-[10px] xl:text-xs tracking-tighter leading-tight'>Available on <br /> Google Play</p>
+                        </div>}
                     </div>
                 </div>
             </div>

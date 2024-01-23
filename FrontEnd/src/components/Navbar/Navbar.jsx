@@ -12,16 +12,19 @@ export default function Navbar() {
         setHamBurger(!HamBurger)
     }
 
-    const [navbarBg, setNavbarBg] = useState('none');
+    const [navbarBg, setNavbarBg] = useState(false);
     const [navbarText, setNavbarText] = useState('white');
+    const [SmallNav, setSmallNav] = useState(false);
 
     const handleScroll = () => {
         if (window.scrollY > 400) {
-            setNavbarBg('white');
+            setNavbarBg(true);
             setNavbarText('black');
+            setSmallNav(true);
         } else {
-            setNavbarBg('none');
+            setNavbarBg(false);
             setNavbarText('white');
+            setSmallNav(false);
         }
     };
     useEffect(() => {
@@ -33,7 +36,7 @@ export default function Navbar() {
     }, []);
     return (
         <>
-            <div className={`flex items-center justify-between px-4 lg:px-10 py-4 bg-${navbarBg}`}>
+            <div className={`flex items-center justify-between px-4 lg:px-10 py-4 ${navbarBg ? 'bg-white' : 'bg-opacity-70'}`}>
                 <div className='w-52 lg:w-auto'>
                     <img src={Logo} alt="LOGO" />
                 </div>
@@ -52,7 +55,7 @@ export default function Navbar() {
                     </ul>
                 </nav>
             </div>
-            {HamBurger && <div className="bg-white bg-opacity-70 px-4 py-4 lg:hidden fade-in-top">
+            {HamBurger && <div className={`bg-white ${SmallNav ? '' : 'bg-opacity-70'} px-4 py-4 lg:hidden fade-in-top`}>
                 <ul className=' text-xl text-black space-y-4 myshadow'>
                     <li><span className='text-orange-600'>G</span>ames</li>
                     <li><span className='text-orange-600'>S</span>tudios</li>
