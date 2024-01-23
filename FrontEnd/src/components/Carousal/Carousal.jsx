@@ -1,0 +1,59 @@
+import React from "react";
+import { Carousel } from 'antd';
+
+import Img1 from '../../images/hero_slide_1.png'
+import Img2 from '../../images/hero_slide_2.png'
+import Img3 from '../../images/hero_slide_3.png'
+import Img4 from '../../images/hero_slide_4.png'
+import Img5 from '../../images/hero_slide_5.png'
+import Img6 from '../../images/hero_slide_6.png'
+import Img7 from '../../images/hero_slide_7.png'
+import Img8 from '../../images/hero_slide_8.png'
+import Img9 from '../../images/hero_slide_9.png'
+import Img10 from '../../images/hero_slide_10.png'
+
+const contentStyle = {
+    width: '100%'
+};
+
+export default function Carousal() {
+    const onChange = (currentSlide) => {
+        console.log(currentSlide);
+    };
+    return (
+        <>
+            <Carousel afterChange={onChange} dots={false} fade={true} autoplay={true} infinite={true} speed={500}>
+                <div>
+                    <img style={contentStyle} src={Img1} />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img2} />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img3} />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img4} />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img5} />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img6} />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img7} />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img8} />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img9} />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img10} />
+                </div>
+            </Carousel>
+        </>
+    )
+}
