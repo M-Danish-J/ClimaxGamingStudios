@@ -15,6 +15,7 @@ export default function Navbar() {
     const [navbarBg, setNavbarBg] = useState(false);
     const [navbarText, setNavbarText] = useState('white');
     const [SmallNav, setSmallNav] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     const handleScroll = () => {
         if (window.scrollY > 400) {
@@ -27,16 +28,23 @@ export default function Navbar() {
             setSmallNav(false);
         }
     };
+    const handleResize = () => {
+        setIsSmallScreen(window.innerWidth <= 768);
+    };
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
+
+        handleResize();
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
     return (
         <>
-            <div className={`flex items-center justify-between px-4 lg:px-10 py-4 ${navbarBg ? 'bg-white' : 'bg-opacity-70'}`}>
+            <div className={`${isSmallScreen && 'bg-white'} flex items-center justify-between px-4 lg:px-10 py-4 ${navbarBg ? 'bg-white ! shadow' : 'bg-opacity-70'} `}>
                 <div className='w-52 lg:w-auto'>
                     <img src={Logo} alt="LOGO" />
                 </div>
@@ -44,11 +52,11 @@ export default function Navbar() {
                     {HamBurger ? <IoMdClose /> : <GiHamburgerMenu />}
                 </div>
                 <nav className='hidden lg:block'>
-                    <ul className={`flex items-center justify-center gap-4 text-xl text-${navbarText} myshadow`}>
+                    <ul className={`flex items-center justify-center leading-none gap-4 text-lg text-${navbarText} myshadow`}>
                         <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Games</li>
                         <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Studios</li>
                         <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Careers</li>
-                        <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>M-Labs</li>
+                        <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>M−Labs</li>
                         <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Fresh Graduate Program</li>
                         <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>ProGolf</li>
                         <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Contact</li>
@@ -60,7 +68,7 @@ export default function Navbar() {
                     <li><span className='text-orange-600'>G</span>ames</li>
                     <li><span className='text-orange-600'>S</span>tudios</li>
                     <li><span className='text-orange-600'>C</span>areers</li>
-                    <li><span className='text-orange-600'>M</span>-Labs</li>
+                    <li><span className='text-orange-600'>M</span>−Labs</li>
                     <li><span className='text-orange-600'>F</span>resh Graduate Programs</li>
                     <li><span className='text-orange-600'>P</span>roGolf</li>
                     <li><span className='text-orange-600'>C</span>ontact</li>

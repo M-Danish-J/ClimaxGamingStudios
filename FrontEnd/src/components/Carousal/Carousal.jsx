@@ -22,7 +22,7 @@ export default function Carousal() {
     };
     return (
         <>
-            <Carousel afterChange={onChange} dots={false} fade={true} autoplay={true} infinite={true} speed={500}>
+            <Carousel afterChange={onChange} dots={false} fade={true} autoplay={true} infinite={true} speed={100}>
                 <div>
                     <img style={contentStyle} src={Img1} />
                 </div>
