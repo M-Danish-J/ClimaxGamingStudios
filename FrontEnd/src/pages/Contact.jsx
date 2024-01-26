@@ -10,7 +10,7 @@ export default function Contact() {
         <div className='mt-52 md:mt-0'>
             <Heading heading="GET IN" span="TOUCH" description="We would love to hear from you!" />
             <div className="flex flex-col mt-20 md:mt-0 md:flex-row md:w-full items-baseline gap-4">
-                <div className="md:w-1/2">
+                <div className="w-full md:w-1/2">
                     <SmallHeading text='LEAVE US A MESSAGE' />
                     <div className='bg-gray-100 px-4 py-4 shadow-xl mt-4'>
                         <MyForm />
@@ -24,7 +24,7 @@ export default function Contact() {
                                 <TbMailFilled size={18} color='#ff7e00' />
                             </div>
                             <p>Email:
-                                <span className='text-[#ff7e00]'>hello@mindstormstudios.com</span>
+                                <span className='text-[#ff7e00] text-sm'>hello@mindstormstudios.com</span>
                             </p>
                         </div>
                         <div className="flex items-center gap-2">
@@ -32,7 +32,7 @@ export default function Contact() {
                                 <ImLocation size={18} color='#ff7e00' />
                             </div>
                             <p>Head Office:
-                                <span className='text-[#ff7e00]'>  8 The Green, Suite 12483, Dover, DE 19901</span>
+                                <span className='text-[#ff7e00] text-sm'>  8 The Green, Suite 12483, Dover, DE 19901</span>
                             </p>
                         </div>
                         <div className="flex items-center gap-2">
@@ -40,7 +40,7 @@ export default function Contact() {
                                 <TbMailFilled size={18} color='#ff7e00' />
                             </div>
                             <p>Studio Address:
-                                <span className='text-[#ff7e00]'>Office No. 806, 8th Floor, Haly Tower, DHA Phase 2, Lahore, 54500</span>
+                                <span className='text-[#ff7e00] text-sm'>Office No. 806, 8th Floor, Haly Tower, DHA Phase 2, Lahore, 54500</span>
                             </p>
                         </div>
                     </div>
