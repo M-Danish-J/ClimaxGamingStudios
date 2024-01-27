@@ -18,7 +18,7 @@ const contentStyle = {
 
 export default function Carousal() {
     const onChange = (currentSlide) => {
-        console.log(currentSlide);
+        // console.log(currentSlide);
     };
     return (
         <>

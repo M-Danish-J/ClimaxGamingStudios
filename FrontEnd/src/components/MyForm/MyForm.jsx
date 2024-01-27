@@ -1,17 +1,35 @@
+"use client"
 import React, { useState } from 'react';
 import { Button, Form, Input } from 'antd';
+import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
 
-const MyForm = () => {
+
+export default function MyForm() {
+    const [form] = Form.useForm();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const [formMsg, setFormMsg] = useState(false);
 
     const onFinish = (values) => {
-        console.log('Success:', values);
+        console.log('Values:', values);
         setFormMsg(false);
+        form.resetFields()
+        emailjs.send('service_n08pfyh', 'template_in46ytk', values, 'NoMSHdZ8hBy4kNigW')
+            .then((response) => {
+                console.log('Email sent:', response);
+                form.resetFields();
+                toast.success("Email Sent Successfully! Thank You For Contacting Us!");
+            })
+            .catch((error) => {
+                console.error('Email error:', error);
+                toast.error("Failed to send email. Please try again later.");
+            });
     };
 
     const onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
         setFormMsg(true);
+
     };
 
     return (
@@ -27,7 +45,7 @@ const MyForm = () => {
         >
             <div className="border-b-2 border-b-[#ff7e00]">
                 <Form.Item
-                    name="username"
+                    name="name"
                     rules={[
                         {
                             required: true,
@@ -49,6 +67,10 @@ const MyForm = () => {
                         {
                             required: true,
                             message: 'Email is required!',
+                        },
+                        {
+                            pattern: emailRegex,
+                            message: 'Please enter a valid email!',
                         },
                     ]}
                 >
@@ -93,4 +115,4 @@ const MyForm = () => {
     );
 };
 
-export default MyForm;
+
