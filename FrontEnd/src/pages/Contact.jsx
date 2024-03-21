@@ -45,7 +45,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="mt-5">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108853.92488695767!2d74.32260302382215!3d31.50533692348734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391907119f7597af%3A0x9039432c58df6514!2sMindstorm%20Studios!5e0!3m2!1sen!2s!4v1706162595939!5m2!1sen!2s" height="400" width="100%" style={{ border: "1px solid yellow" }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe title='Map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108853.92488695767!2d74.32260302382215!3d31.50533692348734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391907119f7597af%3A0x9039432c58df6514!2sMindstorm%20Studios!5e0!3m2!1sen!2s!4v1706162595939!5m2!1sen!2s" height="400" width="100%" style={{ border: "1px solid yellow" }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Logo from "../../images/logo.svg"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import "./Navbar.css"
@@ -45,21 +44,21 @@ export default function Navbar() {
     return (
         <>
             <div className={`${isSmallScreen && 'bg-white'} flex items-center justify-between px-4 lg:px-10 py-4 ${navbarBg ? 'bg-white ! shadow' : 'bg-opacity-70'} `}>
-                <div className='w-52 lg:w-auto'>
-                    <img src={Logo} alt="LOGO" />
+                <div>
+                    <p className='font-sans text-2xl sm:text-4xl font-bold '><span className='text-[#ff7e00]'>BiBrow</span>Solutions</p>
                 </div>
                 <div className="lg:hidden text-3xl " onClick={handleToggle}>
                     {HamBurger ? <IoMdClose /> : <GiHamburgerMenu />}
                 </div>
                 <nav className='hidden lg:block'>
                     <ul className={`flex items-center justify-center leading-none gap-4 text-lg text-${navbarText} myshadow`}>
-                        <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Games</li>
-                        <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Studios</li>
-                        <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Careers</li>
-                        <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>M−Labs</li>
-                        <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Fresh Graduate Program</li>
-                        <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>ProGolf</li>
-                        <li className='hover:text-[#ee9222] cursor-pointer shadow-black'>Contact</li>
+                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Games</li>
+                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Studios</li>
+                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Careers</li>
+                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>M−Labs</li>
+                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Fresh Graduate Program</li>
+                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>ProGolf</li>
+                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Contact</li>
                     </ul>
                 </nav>
             </div>

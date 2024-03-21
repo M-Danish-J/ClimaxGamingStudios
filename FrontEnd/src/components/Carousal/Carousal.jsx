@@ -24,34 +24,34 @@ export default function Carousal() {
         <>
             <Carousel afterChange={onChange} dots={false} fade={true} autoplay={true} infinite={true} speed={100}>
                 <div>
-                    <img style={contentStyle} src={Img1} />
+                    <img style={contentStyle} src={Img1} alt="carousal" />
                 </div>
                 <div>
-                    <img style={contentStyle} src={Img2} />
+                    <img style={contentStyle} src={Img2} alt="carousal" />
                 </div>
                 <div>
-                    <img style={contentStyle} src={Img3} />
+                    <img style={contentStyle} src={Img3} alt="carousal" />
                 </div>
                 <div>
-                    <img style={contentStyle} src={Img4} />
+                    <img style={contentStyle} src={Img4} alt="carousal" />
                 </div>
                 <div>
-                    <img style={contentStyle} src={Img5} />
+                    <img style={contentStyle} src={Img5} alt="carousal" />
                 </div>
                 <div>
-                    <img style={contentStyle} src={Img6} />
+                    <img style={contentStyle} src={Img6} alt="carousal" />
                 </div>
                 <div>
-                    <img style={contentStyle} src={Img7} />
+                    <img style={contentStyle} src={Img7} alt="carousal" />
                 </div>
                 <div>
-                    <img style={contentStyle} src={Img8} />
+                    <img style={contentStyle} src={Img8} alt="carousal" />
                 </div>
                 <div>
-                    <img style={contentStyle} src={Img9} />
+                    <img style={contentStyle} src={Img9} alt="carousal" />
                 </div>
                 <div>
-                    <img style={contentStyle} src={Img10} />
+                    <img style={contentStyle} src={Img10} alt="carousal" />
                 </div>
             </Carousel>
         </>

@@ -34,6 +34,7 @@ export default function MyForm() {
 
     return (
         <Form
+            form={form}
             name="MyForm"
             initialValues={{
                 remember: true,
@@ -55,7 +56,7 @@ export default function MyForm() {
                 >
                     <Input
                         placeholder="Name*"
-                        className="text-lg bg-gray-100 border-none hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:border-none"
+                        className="text-lg bg-gray-100 border-none outline-none hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:border-none focus:ring-0"
                     />
                 </Form.Item>
             </div>
@@ -76,7 +77,7 @@ export default function MyForm() {
                 >
                     <Input
                         placeholder="Email*"
-                        className="text-lg bg-gray-100 border-none hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:border-none mt-5"
+                        className="text-lg bg-gray-100 border-none hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:border-none mt-5 focus:ring-0 outline-none"
                     />
                 </Form.Item>
             </div>
@@ -105,7 +106,7 @@ export default function MyForm() {
             <Form.Item>
                 <Button
                     htmlType="submit"
-                    className="bg-[#ff7e00] text-white mt-10 text-2xl px-8 py-6 flex items-center justify-center hover:bg-black hover:text-white"
+                    className="bg-[#ff7e00] text-white mt-10 text-2xl px-8 py-6 flex items-center justify-center hover:bg-black hover:!text-white border-none outline-none focus:outline-0 focus:border-none"
                 >
                     Send Message
                 </Button>
