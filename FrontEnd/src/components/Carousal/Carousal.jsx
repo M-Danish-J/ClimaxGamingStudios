@@ -23,6 +23,18 @@ export default function Carousal() {
     return (
         <>
             <Carousel afterChange={onChange} dots={false} fade={true} autoplay={true} infinite={true} speed={100}>
+            <div>
+                    <img style={contentStyle} src={Img7} alt="carousal" />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img8} alt="carousal" />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img9} alt="carousal" />
+                </div>
+                <div>
+                    <img style={contentStyle} src={Img10} alt="carousal" />
+                </div>
                 <div>
                     <img style={contentStyle} src={Img1} alt="carousal" />
                 </div>
@@ -41,18 +53,7 @@ export default function Carousal() {
                 <div>
                     <img style={contentStyle} src={Img6} alt="carousal" />
                 </div>
-                <div>
-                    <img style={contentStyle} src={Img7} alt="carousal" />
-                </div>
-                <div>
-                    <img style={contentStyle} src={Img8} alt="carousal" />
-                </div>
-                <div>
-                    <img style={contentStyle} src={Img9} alt="carousal" />
-                </div>
-                <div>
-                    <img style={contentStyle} src={Img10} alt="carousal" />
-                </div>
+               
             </Carousel>
         </>
     )

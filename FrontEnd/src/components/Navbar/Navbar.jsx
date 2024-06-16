@@ -41,24 +41,34 @@ export default function Navbar() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    const scrollToSection = (event, sectionId) => {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth' // Smooth scrolling behavior
+            });
+        }
+    };
+
     return (
         <>
             <div className={`${isSmallScreen && 'bg-white'} flex items-center justify-between px-4 lg:px-10 py-4 ${navbarBg ? 'bg-white ! shadow' : 'bg-opacity-70'} `}>
                 <div>
-                    <p className='font-sans text-2xl sm:text-4xl font-bold '><span className='text-[#ff7e00]'>BiBrow</span>Solutions</p>
+                    <p className='font-sans text-2xl sm:text-4xl font-bold '><span className='text-[#ff7e00]'>Climax</span>Studios</p>
                 </div>
                 <div className="lg:hidden text-3xl " onClick={handleToggle}>
                     {HamBurger ? <IoMdClose /> : <GiHamburgerMenu />}
                 </div>
                 <nav className='hidden lg:block'>
                     <ul className={`flex items-center justify-center leading-none gap-4 text-lg text-${navbarText} myshadow`}>
-                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Games</li>
-                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Studios</li>
-                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Careers</li>
-                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>M−Labs</li>
-                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Fresh Graduate Program</li>
-                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>ProGolf</li>
-                        <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Contact</li>
+                        <li onClick={(event) => scrollToSection(event, 'games')} className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Games</li>
+                        <li onClick={(event) => scrollToSection(event, 'studio')} className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Studios</li>
+                        <li onClick={(event) => scrollToSection(event, 'perks')} className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Perks</li>
+                        <li onClick={(event) => scrollToSection(event, 'labs')} className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>M−Labs</li>
+                        {/* <li className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Fresh Graduate Program</li> */}
+                        <li onClick={(event) => scrollToSection(event, 'contact')} className='hover:text-[#ee9222] duration-300 cursor-pointer shadow-black'>Contact</li>
                     </ul>
                 </nav>
             </div>

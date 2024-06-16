@@ -13,7 +13,7 @@ import { FiPenTool } from "react-icons/fi";
 
 export default function Perks() {
     return (
-        <div className=' mt-16'>
+        <div id='perks' className=' mt-16'>
             <SmallHeading text="OUR PERKS" />
             <div className="grid grid-cols-2 md:grid-cols-3 md:gap-x-10 xl:gap-x-16 py-10">
                 <PerkCard icon={FaHandHoldingHeart} text="In Patient & Out Patient Medical Coverage" />

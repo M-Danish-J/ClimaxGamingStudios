@@ -10,7 +10,7 @@
 }
 
 .card-container.expanded {
-  max-height: 1300px;
+  max-height: 2200px;
 }
 
 .toggle-button {
@@ -27,6 +27,6 @@
   }
 
   .card-container.expanded {
-    max-height: 2300px;
+    max-height: 3000px;
   }
 }

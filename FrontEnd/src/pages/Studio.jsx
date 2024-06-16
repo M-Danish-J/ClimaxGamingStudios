@@ -66,7 +66,7 @@ export default function Studio() {
     const images = [Img1, Img2, Img3, Img4, Img5, Img6];
 
     return (
-        <div className='mt-10 min-h-screen'>
+        <div id='studio' className='mt-10 min-h-screen'>
             <Heading heading="THE" span="STUDIO" description="Work hard, play hard! We offer the best-in-class work environment, unmatched perks and a world-class culture of inclusion and diversity!" />
             <div className="grid grid-cols-2 md:grid-cols-3 gap-1 mt-16 cursor-pointer">
                 {images.map((image, index) => (
