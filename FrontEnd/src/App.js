@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useState, useEffect } from 'react';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import ScrollToTop from './components/Scroll';
 const txtFile = '../public/app-adds.txt'
 const queryClient = new QueryClient()
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} /> {/* Make sure to use `element` instead of `Component` */}
           <Route path='/privacyPolicy' element={<PrivacyPolicy />} /> {/* Make sure to use `element` instead of `Component` */}
