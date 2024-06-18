@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer'
 const PrivacyPolicy = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar flag={true} />
             <div className="py-10 px-5 lg:px-32">
                 <div className='text-center font-bold text-4xl lg:text-5xl'>
                     <h1>Privacy Policy</h1>
