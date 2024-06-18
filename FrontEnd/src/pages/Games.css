@@ -4,13 +4,13 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  max-height: 600px;
+  max-height: 700px;
   overflow: hidden;
   transition: max-height 1s ease-in-out;
 }
 
 .card-container.expanded {
-  max-height: 2200px;
+  max-height: 5000px;
 }
 
 .toggle-button {
@@ -23,10 +23,10 @@
 
 @media screen and (max-width: 500px) {
   .card-container {
-    max-height: 1300px;
+    max-height: 1800px;
   }
 
   .card-container.expanded {
-    max-height: 3000px;
+    max-height: 3500px;
   }
 }

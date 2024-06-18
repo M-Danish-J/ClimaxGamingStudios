@@ -4,7 +4,6 @@ import Main from '../components/Main/Main'
 
 import Games from './Games'
 import Hiring from '../components/Hiring/Hiring'
-import MLABS from '../components/M-Labs/MLABS'
 import Perks from './Perks'
 import Studio from './Studio'
 import Footer from '../components/Footer/Footer'
@@ -22,7 +21,7 @@ export default function Home() {
                 <Studio />
                 <Perks />
                 <Hiring />
-                <MLABS />
+                {/* <MLABS /> */}
                 <Contact />
             </div>
             <Footer />

@@ -35,9 +35,9 @@ export default function Heading({ heading, span, description, width }) {
             <div className={`text-4xl md:flex items-center ${isVisible ? 'headingAnimate' : ''}`} ref={headingRef}>
                 <h1>
                     {heading}
-                    <span className='text-[#ff7e00] pl-4 font-semibold tracking-[5px]'>{span}</span>
+                    <span className='text-[#3572EF] pl-4 font-semibold tracking-[5px]'>{span}</span>
                 </h1>
-                <div className={`md:ml-6 lg:mx-10 h-[3px] bg-[#ff7e00] ${isVisible ? 'animateWidth' : ''}`} ref={animateWidthRef}></div>
+                <div className={`md:ml-6 lg:mx-10 h-[3px] bg-[#3572EF] ${isVisible ? 'animateWidth' : ''}`} ref={animateWidthRef}></div>
             </div>
             <p className={`text-base py-4 lg:pr-20 ${width ? 'w-2/3' : ''}`}>
                 {description}

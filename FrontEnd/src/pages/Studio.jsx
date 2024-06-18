@@ -80,7 +80,7 @@ export default function Studio() {
                         <img src={image} alt={`img ${index + 1}`} />
                         {hoveredIndex === index && (
                             <div className="absolute inset-0 bg-white opacity-80 flex items-center justify-center">
-                                <BiImage size={80} color="#ff7e00" />
+                                <BiImage size={80} color="#3572EF" />
                             </div>
                         )}
                     </div>
@@ -93,16 +93,16 @@ export default function Studio() {
                         <img className='w-full h-full' src={images[selectedImageIndex]} alt={`img ${selectedImageIndex + 1}`} />
 
                         <button onClick={handlePrev} className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white px-6 py-3 rounded">
-                            <FiChevronLeft size={50} color="#ff7e00" />
+                            <FiChevronLeft size={50} color="#3572EF" />
                         </button>
                         <button onClick={handleNext} className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white px-6 py-3 rounded">
-                            <FiChevronRight size={50} color="#ff7e00" />
+                            <FiChevronRight size={50} color="#3572EF" />
                         </button>
 
                         <span className="absolute -bottom-10 left-4">{`Image ${selectedImageIndex + 1} of ${images.length}`}</span>
 
                         <button onClick={handleCancel} className="absolute -bottom-10 right-4">
-                            <MdClose size={32} color="#ff7e00" />
+                            <MdClose size={32} color="#3572EF" />
                         </button>
                     </div>
                 </div>

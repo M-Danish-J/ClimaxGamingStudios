@@ -44,7 +44,7 @@ export default function MyForm() {
             autoComplete="off"
             scrollToFirstError={true}
         >
-            <div className="border-b-2 border-b-[#ff7e00]">
+            <div className="border-b-2 border-b-[#3572EF]">
                 <Form.Item
                     name="name"
                     rules={[
@@ -61,7 +61,7 @@ export default function MyForm() {
                 </Form.Item>
             </div>
 
-            <div className="border-b-2 border-b-[#ff7e00]">
+            <div className="border-b-2 border-b-[#3572EF]">
                 <Form.Item
                     name="email"
                     rules={[
@@ -82,7 +82,7 @@ export default function MyForm() {
                 </Form.Item>
             </div>
 
-            <div className="border-b-2 border-b-[#ff7e00]">
+            <div className="border-b-2 border-b-[#3572EF]">
                 <Form.Item
                     name="message"
                     rules={[
@@ -106,7 +106,7 @@ export default function MyForm() {
             <Form.Item>
                 <Button
                     htmlType="submit"
-                    className="bg-[#ff7e00] text-white mt-10 text-2xl px-8 py-6 flex items-center justify-center hover:bg-black hover:!text-white border-none outline-none focus:outline-0 focus:border-none"
+                    className="bg-[#3572EF] text-white mt-10 text-2xl px-8 py-6 flex items-center justify-center hover:bg-black hover:!text-white border-none outline-none focus:outline-0 focus:border-none"
                 >
                     Send Message
                 </Button>

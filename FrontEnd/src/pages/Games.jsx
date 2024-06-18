@@ -23,9 +23,9 @@ const allCards = [
     { text: 'Commando Shooting', desc: 'Casual | Mobile', img: img1, android: true, link: "https://play.google.com/store/apps/details?id=com.bf.call.commando.shooting.games" },
     { text: 'Modern Sniper Assasin', desc: 'Casual | Mobile', img: img2, android: true, link: "https://play.google.com/store/apps/details?id=com.bp.modern.sniper.assasin.sniper.Shooting.game" },
     { text: 'Stickman Sniper Shooter', desc: 'Casual | Mobile', img: img3, android: true, link: "https://play.google.com/store/apps/details?id=com.bp.stickman.sniper.shooter.free.fungame" },
+    { text: 'Farming Simulator Modern', desc: 'Casual | Mobile', img: img6, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.farming.simulator.modern.newfarming.games", apple: true, linkApple: "https://apps.apple.com/ua/app/farming-games-american-farmer/id6499069064" },
     { text: 'Driving School Simulator', desc: 'Casual | Mobile', img: img4, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.driving.school.simulator.driving.games" },
     { text: 'Ertugrulgazi Game 2020', desc: 'Casual | Mobile', img: img5, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.ertugrulgazi.games2020.realmount.bladefight" },
-    { text: 'Farming Simulator Modern', desc: 'Casual | Mobile', img: img6, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.farming.simulator.modern.newfarming.games" },
     { text: 'Football Worldcup', desc: 'Casual | Mobile', img: img7, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.football.worldcup.newgames" },
     { text: 'Ninja Assassin Shadow Master', desc: 'Casual | Mobile', img: img8, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.ninja.assassin.shadow.master.creed.fighter.games" },
     { text: 'Ninja Samurai Hunter', desc: 'Casual | Mobile', img: img9, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.ninja.samurai.assassin.hunter.creed.hero.fighter" },
@@ -78,7 +78,7 @@ export default function Games() {
             {renderCardChunks()}
             <div
                 onClick={toggleCards}
-                className={`toggle-button text-[#ff7e00] cursor-pointer hover:text-black`}
+                className={`toggle-button text-[#3572EF] cursor-pointer hover:text-black`}
             >
                 {showMore ? <p>Show less</p> : <p>Explore More</p>}
                 {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}

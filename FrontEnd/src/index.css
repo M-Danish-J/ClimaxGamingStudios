@@ -21,7 +21,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff7e00; /* color of the scroll thumb */
+  background-color: #3572EF; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px; /* creates padding around scroll thumb */
 }
@@ -29,5 +29,5 @@ html {
 /* For Firefox */
 * {
   scrollbar-width: auto; /* "auto" or "thin" */
-  scrollbar-color: #ff7e00 transparent; /* thumb and track color */
+  scrollbar-color: #3572EF transparent; /* thumb and track color */
 }
