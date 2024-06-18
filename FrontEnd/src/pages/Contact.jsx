@@ -8,7 +8,7 @@ import MyForm from '../components/MyForm/MyForm';
 export default function Contact() {
     return (
         <div id='contact' className='mt-52 md:mt-0'>
-            <Heading heading="GET IN" span="TOUCH" description="We would love to hear from you!" />
+            <Heading heading="GET IN" span="TOUCH" description="We’re excited to hear from you!" />
             <div className="flex flex-col mt-20 md:mt-0 md:flex-row md:w-full items-baseline gap-4">
                 <div className="w-full md:w-1/2">
                     <SmallHeading text='LEAVE US A MESSAGE' />

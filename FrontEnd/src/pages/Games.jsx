@@ -5,34 +5,34 @@ import Heading from '../components/Heading/Heading';
 import GameCard from '../components/GameCard/GameCard';
 import img1 from '../images/game1.jpg';
 import img2 from '../images/game2.jpg';
-import img3 from '../images/game3.jpg';
-import img4 from '../images/game4.jpg';
-import img5 from '../images/game5.jpg';
+// import img3 from '../images/game3.jpg';
+// import img4 from '../images/game4.jpg';
+// import img5 from '../images/game5.jpg';
 import img6 from '../images/game6.jpg';
-import img7 from '../images/game7.jpg';
-import img8 from '../images/game8.jpg';
-import img9 from '../images/game9.jpg';
-import img10 from '../images/game10.jpg';
+// import img7 from '../images/game7.jpg';
+// import img8 from '../images/game8.jpg';
+// import img9 from '../images/game9.jpg';
+// import img10 from '../images/game10.jpg';
 import img11 from '../images/game11.jpg';
-import img12 from '../images/game12.jpg';
-import img13 from '../images/game13.jpg';
+// import img12 from '../images/game12.jpg';
+// import img13 from '../images/game13.jpg';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import './Games.css'; // Import the CSS file for styles
 
 const allCards = [
-    { text: 'Commando Shooting', desc: 'Casual | Mobile', img: img1, android: true, link: "https://play.google.com/store/apps/details?id=com.bf.call.commando.shooting.games" },
-    { text: 'Modern Sniper Assasin', desc: 'Casual | Mobile', img: img2, android: true, link: "https://play.google.com/store/apps/details?id=com.bp.modern.sniper.assasin.sniper.Shooting.game" },
-    { text: 'Stickman Sniper Shooter', desc: 'Casual | Mobile', img: img3, android: true, link: "https://play.google.com/store/apps/details?id=com.bp.stickman.sniper.shooter.free.fungame" },
+    { text: 'IGI Commando', desc: 'Casual | Mobile', img: img1, android: true, link: "https://play.google.com/store/apps/details?id=com.bf.call.commando.shooting.games" },
+    { text: 'Sniper Contracts', desc: 'Casual | Mobile', img: img11, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.sniper.assassin.real.city.sniper.shooter" },
+    { text: 'Tennis Clash', desc: 'Casual | Mobile', img: img2, android: true, link: "https://play.google.com/store/apps/details?id=com.bp.modern.sniper.assasin.sniper.Shooting.game", apple: true, linkApple: "https://apps.apple.com/no/app/topspin-trophy-tennis-games/id6499003230" },
     { text: 'Farming Simulator Modern', desc: 'Casual | Mobile', img: img6, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.farming.simulator.modern.newfarming.games", apple: true, linkApple: "https://apps.apple.com/ua/app/farming-games-american-farmer/id6499069064" },
-    { text: 'Driving School Simulator', desc: 'Casual | Mobile', img: img4, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.driving.school.simulator.driving.games" },
-    { text: 'Ertugrulgazi Game 2020', desc: 'Casual | Mobile', img: img5, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.ertugrulgazi.games2020.realmount.bladefight" },
-    { text: 'Football Worldcup', desc: 'Casual | Mobile', img: img7, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.football.worldcup.newgames" },
-    { text: 'Ninja Assassin Shadow Master', desc: 'Casual | Mobile', img: img8, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.ninja.assassin.shadow.master.creed.fighter.games" },
-    { text: 'Ninja Samurai Hunter', desc: 'Casual | Mobile', img: img9, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.ninja.samurai.assassin.hunter.creed.hero.fighter" },
-    { text: 'Osmanghazi Dirilis Ertugrul', desc: 'Casual | Mobile', img: img10, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.osmanghazi.dirilis.ertugrul.gazi.newgames" },
-    { text: 'Sniper Assassin Real City', desc: 'Casual | Mobile', img: img11, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.sniper.assassin.real.city.sniper.shooter" },
-    { text: 'Wild Deer Hunter', desc: 'Casual | Mobile', img: img12, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.wild.deer.hunter.animal.hunting.games" },
-    { text: 'Frag Guns Shooter', desc: 'Casual | Mobile', img: img13, android: true, link: "https://play.google.com/store/apps/details?id=com.lss.frag.guns.shooter.boom.pvp.action.game" },
+    // { text: 'Stickman Sniper Shooter', desc: 'Casual | Mobile', img: img3, android: true, link: "https://play.google.com/store/apps/details?id=com.bp.stickman.sniper.shooter.free.fungame" },
+    // { text: 'Driving School Simulator', desc: 'Casual | Mobile', img: img4, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.driving.school.simulator.driving.games" },
+    // { text: 'Ertugrulgazi Game 2020', desc: 'Casual | Mobile', img: img5, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.ertugrulgazi.games2020.realmount.bladefight" },
+    // { text: 'Football Worldcup', desc: 'Casual | Mobile', img: img7, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.football.worldcup.newgames" },
+    // { text: 'Ninja Assassin Shadow Master', desc: 'Casual | Mobile', img: img8, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.ninja.assassin.shadow.master.creed.fighter.games" },
+    // { text: 'Ninja Samurai Hunter', desc: 'Casual | Mobile', img: img9, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.ninja.samurai.assassin.hunter.creed.hero.fighter" },
+    // { text: 'Osmanghazi Dirilis Ertugrul', desc: 'Casual | Mobile', img: img10, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.osmanghazi.dirilis.ertugrul.gazi.newgames" },
+    // { text: 'Wild Deer Hunter', desc: 'Casual | Mobile', img: img12, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.wild.deer.hunter.animal.hunting.games" },
+    // { text: 'Frag Guns Shooter', desc: 'Casual | Mobile', img: img13, android: true, link: "https://play.google.com/store/apps/details?id=com.lss.frag.guns.shooter.boom.pvp.action.game" },
 ];
 
 const chunkArray = (arr, chunkSize) => {
@@ -73,16 +73,16 @@ export default function Games() {
             <Heading
                 heading="OUR"
                 span="GAMES"
-                description="Doing what we do best! Our portfolio houses some of the most iconic & wildly popular titles like War Inc, Teeny Sheep & our recent Chart-Toppers such as Hospital Inc & Piercing Parlor. Allow us to show you our world in under 60 seconds!"
+                description="Excelling in our craft! Our collection features some of the most iconic and popular titles, including Farming Simulator, Sniper Contracts, and recent hits like Tennis and IGI Commando. Discover our world!"
             />
             {renderCardChunks()}
-            <div
+            {/* <div
                 onClick={toggleCards}
                 className={`toggle-button text-[#3572EF] cursor-pointer hover:text-black`}
             >
                 {showMore ? <p>Show less</p> : <p>Explore More</p>}
                 {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
-            </div>
+            </div> */}
         </div>
     );
 }

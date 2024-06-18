@@ -67,7 +67,7 @@ export default function Studio() {
 
     return (
         <div id='studio' className='mt-10 min-h-screen'>
-            <Heading heading="THE" span="STUDIO" description="Work hard, play hard! We offer the best-in-class work environment, unmatched perks and a world-class culture of inclusion and diversity!" />
+            <Heading heading="THE" span="STUDIO" description="Strive for excellence and enjoy life! Join us for an outstanding work environment, incredible benefits, and a culture that celebrates inclusion and diversity on a global scale!" />
             <div className="grid grid-cols-2 md:grid-cols-3 gap-1 mt-16 cursor-pointer">
                 {images.map((image, index) => (
                     <div
