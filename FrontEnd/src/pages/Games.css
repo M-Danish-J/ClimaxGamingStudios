@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  max-height: 700px;
+  max-height: 2000px;
   overflow: hidden;
   transition: max-height 1s ease-in-out;
 }

@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     return (
         <div>
             <Navbar />
-            <div className="py-10 px-32">
+            <div className="py-10 px-5 lg:px-32">
                 <div className='text-center font-bold text-4xl lg:text-5xl'>
                     <h1>Privacy Policy</h1>
                     <h1>&</h1>
@@ -36,12 +36,7 @@ const PrivacyPolicy = () => {
                     </p>
                     <h1 className='text-xl font-semibold py-5'>4. Third-Party Analytics and Advertising Partners</h1>
                     <p className='text-[16px]'>
-                        We work with trusted third-party analytics and advertising partners to help us understand how our Services are being used, to provide targeted advertising, and to assist with other analytics and marketing efforts. These partners may collect and process information about your use of our Services as described above. Some of our current partners include:<br />
-                        <strong>Firebase (by Google):</strong> Provides analytics and performance monitoring services.<br />
-                        <strong>Game Analytics:</strong> Offers game data tracking and analytics solutions.<br />
-                        <strong>AdMob (by Google):</strong> Serves advertisements within our games and collects advertising data.<br />
-                        <strong>Unity Ads:</strong> Provides an advertising platform for serving ads in our games.<br />
-                        <strong>AppLovin:</strong> Offers a mobile marketing platform for in-app advertising and analytics.<br />
+                        We work with trusted third-party analytics and advertising partners to help us understand how our Services are being used, to provide targeted advertising, and to assist with other analytics and marketing efforts. These partners may collect and process information about your use of our Services as described above. <br />
                         Please note that these third-party partners may have their own privacy policies governing their collection, use, and disclosure of information. We encourage you to review their privacy policies to understand their practices.
                     </p>
                     <h1 className='text-xl font-semibold py-5'>5. Advertising</h1>
