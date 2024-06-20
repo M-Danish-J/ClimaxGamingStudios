@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import "./Navbar.css";
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import LOGO from '../../images/Logo.png'
 
 export default function Navbar({ flag }) {
     const [HamBurger, setHamBurger] = useState(false);
@@ -77,7 +78,7 @@ export default function Navbar({ flag }) {
             <div className={`${isSmallScreen && 'bg-white'} flex items-center justify-between px-4 lg:px-10 py-4 ${navbarBg ? 'bg-white shadow' : 'bg-opacity-70'}`}>
                 <div>
                     <Link to="/">
-                        <p className='font-sans text-2xl sm:text-4xl font-bold'><span className='text-[#3572EF]'>Climax</span>Studios</p>
+                        <img src={LOGO} alt="Img" />
                     </Link>
                 </div>
                 <div className="lg:hidden text-3xl" onClick={handleToggle}>

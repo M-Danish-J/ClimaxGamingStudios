@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import hero_splash from '../../images/hero_splash.svg'
-import hero_splash_big from '../../images/hero-splash-2-big.svg'
 import Carousal from '../Carousal/Carousal'
+
+import hero from '../../images/hero.png'
+import hero2 from '../../images/heroBig.png'
 
 
 
@@ -26,7 +27,7 @@ export default function Main() {
         <div>
             <div className="flex w-full">
                 <div className="lg:w-1/2">
-                    {isLarge ? <img src={hero_splash_big} alt="Main" /> : <img src={hero_splash} alt="Main" />}
+                    {isLarge ? <img src={hero} alt="Main" /> : <img src={hero2} alt="Main" />}
                 </div>
                 <div className="w-[58%] hidden lg:block">
                     <Carousal />
