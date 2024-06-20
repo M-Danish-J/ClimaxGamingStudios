@@ -75,7 +75,7 @@ export default function Navbar({ flag }) {
 
     return (
         <>
-            <div className={`${isSmallScreen && 'bg-white'} flex items-center justify-between px-4 lg:px-10 py-4 ${navbarBg ? 'bg-white shadow' : 'bg-opacity-70'}`}>
+            <div className={`fixed-navbar ${isSmallScreen && 'bg-white'} flex items-center justify-between px-4 lg:px-10 py-4 ${navbarBg ? 'bg-white shadow' : 'bg-opacity-70'}`}>
                 <div>
                     <Link to="/">
                         <img src={LOGO} alt="Img" />
