@@ -22,7 +22,7 @@ import './Games.css'; // Import the CSS file for styles
 const allCards = [
     { text: 'IGI Commando', desc: 'Casual | Mobile', img: img1, android: true, link: "https://play.google.com/store/apps/details?id=com.bf.call.commando.shooting.games" },
     { text: 'Sniper Contracts', desc: 'Casual | Mobile', img: img11, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.sniper.assassin.real.city.sniper.shooter" },
-    { text: 'Tennis Clash', desc: 'Casual | Mobile', img: img2, android: true, link: "https://play.google.com/store/apps/details?id=com.bp.modern.sniper.assasin.sniper.Shooting.game", apple: true, linkApple: "https://apps.apple.com/no/app/topspin-trophy-tennis-games/id6499003230" },
+    { text: 'Tennis Clash', desc: 'Casual | Mobile', img: img2, apple: true, linkApple: "https://apps.apple.com/no/app/topspin-trophy-tennis-games/id6499003230" },
     { text: 'Farming Simulator', desc: 'Casual | Mobile', img: img6, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.farming.simulator.modern.newfarming.games", apple: true, linkApple: "https://apps.apple.com/ua/app/farming-games-american-farmer/id6499069064" },
     // { text: 'Stickman Sniper Shooter', desc: 'Casual | Mobile', img: img3, android: true, link: "https://play.google.com/store/apps/details?id=com.bp.stickman.sniper.shooter.free.fungame" },
     // { text: 'Driving School Simulator', desc: 'Casual | Mobile', img: img4, android: true, link: "https://play.google.com/store/apps/details?id=com.cgs.driving.school.simulator.driving.games" },
