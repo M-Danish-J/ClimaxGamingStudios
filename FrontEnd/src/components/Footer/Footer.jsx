@@ -13,16 +13,16 @@ export default function Footer() {
                 <Link to="/privacyPolicy"><span> | </span><span className='cursor-pointer hover:underline'>Privacy Policy</span></Link> | <Link to="/privacyPolicy"><span className='cursor-pointer hover:underline'>Terms of Service</span></Link>
             </div>
             <div className="flex items-center gap-3">
-                <Link to="https://www.facebook.com/climaxgamestudios?mibextid=ZbWKwL">
+                <Link target='_blank' to="https://www.facebook.com/climaxgamestudios?mibextid=ZbWKwL">
                     <TiSocialFacebook className='hover:text-[#3572EF] cursor-pointer' size={24} />
                 </Link>
-                <Link to="https://youtube.com/@climaxgamestudios2285?si=mVXb5S01sO82b6oK">
+                <Link target='_blank' to="https://youtube.com/@climaxgamestudios2285?si=mVXb5S01sO82b6oK">
                     <CiYoutube className='hover:text-[#3572EF] cursor-pointer' size={24} />
                 </Link>
-                <Link to="https://www.linkedin.com/company/climax-game-studios/">
+                <Link target='_blank' to="https://www.linkedin.com/company/climax-game-studios/">
                     <FaLinkedinIn className='hover:text-[#3572EF] cursor-pointer' size={24} />
                 </Link>
-                <Link to="https://www.tiktok.com/@climaxgamestudios">
+                <Link target='_blank' to="https://www.tiktok.com/@climaxgamestudios">
                     <FaTiktok className='hover:text-[#3572EF] cursor-pointer' size={24} />
                 </Link>
             </div>
