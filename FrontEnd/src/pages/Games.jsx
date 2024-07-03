@@ -16,7 +16,7 @@ import img6 from '../images/game6.jpg';
 import img11 from '../images/game11.jpg';
 // import img12 from '../images/game12.jpg';
 // import img13 from '../images/game13.jpg';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+// import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import './Games.css'; // Import the CSS file for styles
 
 const allCards = [
@@ -44,11 +44,11 @@ const chunkArray = (arr, chunkSize) => {
 };
 
 export default function Games() {
-    const [showMore, setShowMore] = useState(false);
+    const [showMore,] = useState(false);
 
-    const toggleCards = () => {
-        setShowMore(!showMore);
-    };
+    // const toggleCards = () => {
+    //     setShowMore(!showMore);
+    // };
 
     const renderCardChunks = () => {
         const cardsToShow = showMore ? allCards : allCards.slice(0, 4);

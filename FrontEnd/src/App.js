@@ -12,11 +12,23 @@ const txtFile = '../public/app-adds.txt'
 const queryClient = new QueryClient()
 
 function App() {
+
+  useEffect(() => {
+    disableMenu();
+  }, [])
+
+
   // Function to fetch text file content
   const fetchTextFile = () => {
     return fetch(txtFile)
       .then((response) => response.text())
       .catch((error) => console.error('Error fetching text file:', error));
+  };
+
+  const disableMenu = () => {
+    document.addEventListener('contextmenu', (event) => {
+      event.preventDefault();
+    });
   };
 
   return (
