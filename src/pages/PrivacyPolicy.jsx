@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
                     <p className='text-[16px]'>
                         Our Services are not directed towards children under the age of 13, and we do not knowingly collect personal information from children under 13. <br />
                         If we become aware that we have inadvertently collected personal information from a child under 13 without parental consent, we will take reasonable steps to delete such information from our records as soon as possible. <br />
-                        If you believe we may have collected personal information from a child under 13, please contact us at <strong>[ClimaxGameStudios@gmail.com]</strong>.
+                        If you believe we may have collected personal information from a child under 13, please contact us at <strong>[climaxgamestudios@gmail.com]</strong>.
                     </p>
                     <h1 className='text-xl font-semibold py-5'>7. Data Security</h1>
                     <p className='text-[16px]'>
@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
                     <h1 className='text-xl font-semibold py-5'>9. Your Choices and Rights</h1>
                     <p className='text-[16px]'>
                         Depending on your location and applicable laws, you may have certain rights regarding your information, such as the right to access, correct, delete, or object to the processing of your information. <br />
-                        If you would like to exercise any of these rights, please contact us at <strong>[ClimaxGameStudios@gmail.com]</strong>.
+                        If you would like to exercise any of these rights, please contact us at <strong>[climaxgamestudios@gmail.com]</strong>.
                     </p>
                     <h1 className='text-xl font-semibold py-5'>10. Changes to This Privacy Policy</h1>
                     <p className='text-[16px]'>
@@ -79,7 +79,7 @@ const PrivacyPolicy = () => {
                         If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at: <br />
                         <strong>
                             Climax Gaming Studios. <br />
-                            [Email: ClimaxGameStudios@gmail.com] <br />
+                            [Email: climaxgamestudios@gmail.com] <br />
                         </strong>
                         By using our Services, you acknowledge that you have read and understood this Privacy Policy and agree to its terms and conditions.
                     </p>
