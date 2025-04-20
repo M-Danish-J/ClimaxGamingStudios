@@ -24,7 +24,7 @@ export default function Contact() {
                                 <TbMailFilled size={18} color='#3572EF' />
                             </div>
                             <p>Email:
-                                <span className='text-[#3572EF] text-sm'>iamsikandarali@gmail.com</span>
+                                <span className='text-[#3572EF] text-sm'>ClimaxGameStudios@gmail.com</span>
                             </p>
                         </div>
                         {/* <div className="flex items-center gap-2">
