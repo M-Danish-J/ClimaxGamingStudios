@@ -19,13 +19,14 @@ export default function Heading({ heading, span, description, width }) {
             { threshold: 0.5 } // Adjust threshold as needed
         );
 
-        if (headingRef.current) {
-            observer.observe(headingRef.current);
+        const currentRef = headingRef.current;
+        if (currentRef) {
+            observer.observe(currentRef);
         }
 
         return () => {
-            if (headingRef.current) {
-                observer.unobserve(headingRef.current);
+            if (currentRef) {
+                observer.unobserve(currentRef);
             }
         };
     }, []);

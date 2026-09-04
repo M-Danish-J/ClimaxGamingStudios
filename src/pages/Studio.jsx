@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import Heading from '../components/Heading/Heading';
 import { BiImage } from 'react-icons/bi';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
@@ -45,11 +45,11 @@ export default function Studio() {
         setSelectedImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
     };
 
-    const handleClickOutsideModal = (event) => {
+    const handleClickOutsideModal = useCallback((event) => {
         if (modalRef.current && !modalRef.current.contains(event.target)) {
-            handleCancel();
+            setIsModalOpen(false);
         }
-    };
+    }, []);
 
     useEffect(() => {
         if (isModalOpen) {
@@ -61,7 +61,7 @@ export default function Studio() {
         return () => {
             document.removeEventListener('mousedown', handleClickOutsideModal);
         };
-    }, [isModalOpen]);
+    }, [isModalOpen, handleClickOutsideModal]);
 
     const images = [Img1, Img2, Img3, Img4, Img5, Img6];
 
