@@ -2331,5 +2331,3 @@ rhebus.works, 5000863388, RESELLER
 beani.tv, 109811, RESELLER
 vidoomy.com, 4930225, RESELLER
 zmaticoo.com, 5135655, RESELLER
-# Meta
-facebook.com, 1126468667527069, DIRECT, c3e20eee3f780d68
